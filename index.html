@@ -10,7 +10,7 @@
 
     <div class="header__wrapper-callback">
         <div class="header__callback callback">
-            <img class="header__callback__img img" src="img/TelTube.png" alt="Заказать обратный звонок"/>
+            <a href=""><img class="header__callback__img img" src="img/TelTube.png" alt="Заказать обратный звонок"/></a>
             <span class="header__callback__span span">Заказать обратный звонок! </span>
         </div>
     </div>
@@ -36,6 +36,9 @@
 <main class="main">
 
     <nav class="main__nav nav">
+        <button class="main__nav__icon" onclick="myFunction()"> Меню
+        </button>
+
         <a class="main__nav__main a" href="">Главная</a>
         <a class="main__nav__about a" href="">о компании</a>
         <a class="main__nav__client a" href="">клиентам</a>
@@ -45,6 +48,21 @@
         <a class="main__nav__feed a" href="">отзывы</a>
         <a class="main__nav__contacts a" href="">контакты</a>
     </nav>
+
+    <nav class="main__nav_mini nav">
+        <ul>
+            <li><a class="main__nav__main a" href="">Главная</a></li>
+            <li><a class="main__nav__about a" href="">о компании</a></li>
+            <li><a class="main__nav__client a" href="">клиентам</a></li>
+            <li><a class="main__nav__spec a" href="">специализпция</a></li>
+            <li><a class="main__nav__escort a" href="">сопровождение</a></li>
+            <li><a class="main__nav__cat a" href="">каталог</a></li>
+            <li><a class="main__nav__feed a" href="">отзывы</a></li>
+            <li><a class="main__nav__contacts a" href="">контакты</a></li>
+        </ul>
+    </nav>
+
+
     <img class="main__img img" src="img/LadyCloud.png" alt="1С:Отчетность">
 
 
@@ -83,14 +101,11 @@
         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
     </ul>
 
-    <h6 class="main__h-6 h6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+
 
     <h3 class="main__h-3 h3"> Связаться с нами</h3>
 
-    <p class="main__p-4 p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at atque blanditiis  commodi cumque dolorem explicabo illo incclassunt inventore, laborum libero nesciunt non quis, quos sapiente sit soluta tempora ullam.</p>
-
     <div class="main__contacts">
-        <img src="img/bottomInfoBlock.png" alt="">
         <ul>
             <li>Lorem ipsum dolor sit amet</li>
             <li>Lorem ipsum dolor sit amet</li>
@@ -132,5 +147,16 @@
 
     <div class="footer__color-row"></div>
 </footer>
+
+<script>
+    function myFunction() {
+        let x = document.querySelector(".main__nav_mini");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 </body>
 </html>
