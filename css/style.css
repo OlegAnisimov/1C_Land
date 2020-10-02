@@ -203,10 +203,10 @@ body {
       padding: 0.35%; }
   .main__nav_mini {
     display: none;
-    position: fixed;
+    position: absolute;
     width: 50%;
-    top: 34%;
-    left: 18%;
+    top: 17rem;
+    left: 5rem;
     background-color: #dddddd;
     border-radius: 2px;
     text-transform: uppercase; }
